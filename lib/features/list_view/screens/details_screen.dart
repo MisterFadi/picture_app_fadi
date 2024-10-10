@@ -34,7 +34,17 @@ class DetailsScreen extends StatelessWidget {
         ),
         body: Column(
           children: [
-            Image.asset(imagePath),
+            Image.asset("assets/running.jpeg"),
+            const Text(
+              "Runners High",
+              style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+            ),
+            const SizedBox(height: 10),
+            const Padding(
+              padding: EdgeInsets.all(20.0),
+              child: Text(
+                  "Unsere acht Läufer bewegen sich hier in einer beeindruckenden Dreiecks-Formation über die Bahnen des sonnigen Sportplatzes am Mauerpark. Alle Athleten sind synchronisiert, ihre Schritte im perfekten Einklang, während sie die rote Tartanbahn unter ihren Füßen spüren. An einem kühlen Herbstmorgen, während eines intensiven Trainings, wurde diese Formation gewählt, um Teamarbeit und Präzision zu perfektionieren, und es war ein Moment, der die Entschlossenheit und den Zusammenhalt der Gruppe widerspiegelte."),
+            ),
           ],
         ),
       ),
