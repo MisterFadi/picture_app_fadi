@@ -35,11 +35,12 @@ class DetailsScreen extends StatelessWidget {
         body: Column(
           children: [
             Image.asset("assets/running.jpeg"),
+            const SizedBox(height: 10),
             const Text(
               "Runners High",
               style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
             ),
-            const SizedBox(height: 10),
+            const SizedBox(height: 5),
             const Padding(
               padding: EdgeInsets.all(20.0),
               child: Text(

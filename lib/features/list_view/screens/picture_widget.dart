@@ -22,6 +22,7 @@ class _PictureWidgetState extends State<PictureWidget> {
           padding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 20.0),
           child: Column(
             children: <Widget>[
+              const SizedBox(height: 200),
               HorizontalListView.builder(
                 crossAxisCount: 2,
                 crossAxisSpacing: 25,
