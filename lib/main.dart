@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:picture_app_fadi/features/list_view/screens/about_me_widget.dart';
-import 'package:picture_app_fadi/features/list_view/screens/picture_widget.dart';
-import 'package:picture_app_fadi/features/list_view/screens/video_widget.dart';
+import 'package:picture_app_fadi/features/list_view/widget/about_me_widget.dart';
+import 'package:picture_app_fadi/features/list_view/widget/picture_widget.dart';
+import 'package:picture_app_fadi/features/list_view/widget/video_widget.dart';
 
 void main() {
   runApp(const MainApp());

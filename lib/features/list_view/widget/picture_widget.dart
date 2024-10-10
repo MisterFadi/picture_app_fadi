@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:horizontal_list_view/horizontal_list_view.dart';
 import 'package:picture_app_fadi/features/list_view/screens/details_screen.dart';
-import 'package:picture_app_fadi/features/list_view/models/repositories/gallery_data.dart';
+import 'package:picture_app_fadi/features/list_view/repositories/gallery_data.dart';
 
 class PictureWidget extends StatefulWidget {
   const PictureWidget({super.key});
@@ -34,10 +34,11 @@ class _PictureWidgetState extends State<PictureWidget> {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => const DetailsScreen(
-                                      title: '',
-                                      description: '',
-                                      imagePath: '',
+                                builder: (context) => DetailsScreen(
+                                      title: galleryData[index].imageTitle,
+                                      description:
+                                          galleryData[index].imageDescription,
+                                      imagePath: galleryData[index].imagePath,
                                     )));
                       },
                       child: Container(
