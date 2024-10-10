@@ -9,12 +9,12 @@ class VideoWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Center(
       child: Column(
-        crossAxisAlignment: CrossAxisAlignment.center,
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Padding(
             padding: EdgeInsets.all(16.0),
             child: Text(
-              "Videos sind momentan nicht verfügbar. Danke für ihr Verständnis",
+              "Videos sind momentan nicht verfügbar. \n Danke für ihr Verständnis",
               textAlign: TextAlign.center,
               style: TextStyle(fontSize: 30),
             ),
